@@ -1,1 +1,7 @@
-# Task-6-Elevate-labs-
+# Sales Trend Analysis Using Aggregations
+
+This project documents the completion of a core data analysis task focused on uncovering monthly sales performance trends. The primary objective was to analyze the retail company's historical data to calculate two critical metrics—**monthly revenue** and **monthly order volume**—over a multi-year period. By using **SQL aggregation techniques**, the project successfully transformed raw transactional data into actionable time-series insights, which is fundamental for identifying seasonality and supporting business forecasting.
+
+The analysis was executed using **MySQL Workbench** against the `sales_data_sample.csv` dataset. The core methodology involved a single, efficient SQL query that utilized the `GROUP BY` clause on the `YEAR_ID` and `MONTH_ID` columns. We calculated the aggregate metrics by applying the `SUM()` function to the `SALES` column for revenue and the `COUNT(DISTINCT)` function to the `ORDERNUMBER` column for unique order volume. Troubleshooting focused on ensuring correct MySQL-specific syntax to successfully process the CSV data and produce the final, sorted result set.
+
+The resulting sales trend report clearly identified significant business patterns. The key finding was the pronounced **seasonal trend** characterized by massive spikes in sales and order volume during **November** of both 2003 and 2004, with revenues consistently exceeding $1 million in that month. This strong insight is immediately valuable for making data-driven decisions related to inventory management, logistics planning, and targeted marketing campaigns for the high-volume holiday season.
